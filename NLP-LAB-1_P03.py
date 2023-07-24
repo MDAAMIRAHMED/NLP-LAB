@@ -1,5 +1,5 @@
 import re
-pattern = ':'
+pattern = '[abc]'
 text = "This:is:chatgpt"
-result = text.split(pattern)
+result = re.split(pattern, text)
 print(result)
